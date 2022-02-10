@@ -1,0 +1,135 @@
+
+.contenedor{
+    display: grid;
+    grid-template-rows:400px auto;
+    
+    
+}
+.contenedor-titulo{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    grid-gap: 40px;
+    margin: 10px 0px;
+   
+}
+.contenedor-habilidades{
+    display: grid;
+    grid-template-rows:repeat(200px);
+    grid-gap:90px;
+}
+    .subtitulo{
+        color: red;
+        
+        font-size: 35px;
+        font-weight: bold;
+    }
+.footer{
+    display:grid;
+    grid-template-columns: minmax(70px,140px) minmax(200px,auto) minmax(70px,140px);
+    justify-items: center;
+    align-items: center;
+}
+.section-design{
+    margin: 30px auto;
+    grid-template-columns: 1fr;
+}
+.section-design > div{
+    padding: 10px;
+}
+.section-mas{
+    height:auto;
+    width: 80%;
+    margin: 30px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(202, 197, 197);
+    
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+    justify-self: center;
+}
+    .section-mas-video{
+        padding: 10px;
+        
+    }
+    .section-mas-description{
+        padding: 20px;
+    }
+    video{
+        width: 100%;
+    }
+@media  only screen and (min-width: 720px){
+    .contenedor-habilidades{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .section{
+        grid-template-columns:auto auto;
+    }
+    .section > a{
+        width:380px;
+    }
+    .section-design{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        
+    }
+    .section-design > div{
+        padding: 0px;
+    }
+    .section-mas{
+        display:block;
+    }
+    video{
+        width:500px;
+        
+    }
+    .section-mas-video{
+        text-align: center;
+    }
+}
+@media  only screen and (min-width: 1080px){
+    .contenedor-habilidades{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 20px;
+    }
+    .icons-header{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .contenedor-titulo{
+        margin-top:30px;
+        grid-gap: 50px;
+    }
+    .contenedor{
+        grid-template-rows:300px auto;
+    }
+    .numero{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .icons-header-telf{
+        display: block;
+    }
+    .section{
+        grid-template-columns:auto auto auto;
+    }
+    .section-design{
+        
+        width:80%;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    }
+    .section-design > div{
+        padding: 0px;
+    }
+    .section-mas{
+        display:flex;
+    }
+    video{
+        width:600px;
+    }
+}
+
